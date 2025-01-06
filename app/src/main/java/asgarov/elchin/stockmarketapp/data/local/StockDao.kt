@@ -7,7 +7,7 @@ import androidx.room.Query
 
 
 @Dao
-interface StackDao {
+interface StockDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertCompanyListings(
@@ -24,11 +24,7 @@ interface StackDao {
         WHERE LOWER(name) LIKE '%' || LOWER(:query) || '%' OR
             UPPER(:query) == symbol""")
     suspend fun searchCompanyListing(query:String):List<CompanyListingEntity>
-    
-    
-    
-    
 
-    
+
 
 }
