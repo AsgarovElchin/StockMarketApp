@@ -1,7 +1,6 @@
 package asgarov.elchin.stockmarketapp.data.repository
 
 import asgarov.elchin.stockmarketapp.data.csv.CSVParser
-import asgarov.elchin.stockmarketapp.data.csv.CompanyListingsParser
 import asgarov.elchin.stockmarketapp.data.local.StockDatabase
 import asgarov.elchin.stockmarketapp.data.mapper.toCompanyListing
 import asgarov.elchin.stockmarketapp.data.mapper.toCompanyListingEntity

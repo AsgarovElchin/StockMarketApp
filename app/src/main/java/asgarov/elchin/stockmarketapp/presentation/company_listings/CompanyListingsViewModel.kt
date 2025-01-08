@@ -18,7 +18,7 @@ class CompanyListingsViewModel @Inject constructor(
     private val repository:StockRepository
 ):ViewModel() {
 
-    var state by mutableStateOf(CompanyListingState())
+     var state by mutableStateOf(CompanyListingState())
 
     private var searchJob:Job? = null
 
